@@ -3,12 +3,11 @@ pipeline {
 
     stages {
 
-//         stage('Checkout GIT Web-App-CiCD') {
-//             steps {
-//                 git branch: 'main', git 'https://github.com/Velmaniraja/web-app-cicd.git'
-//
-//             }
-//         }
+        stage('Checkout GIT Web-App-CiCD') {
+            steps {
+                git 'https://github.com/Velmaniraja/web-app-cicd.git'
+            }
+        }
 
         stage('Build latest Image') {
             steps {
