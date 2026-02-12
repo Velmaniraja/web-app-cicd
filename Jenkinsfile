@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout GIT Web-App-CiCD') {
             steps {
-                git branch: 'main', git 'https://github.com/Velmaniraja/web-app-cicd.git'
+                git 'https://github.com/Velmaniraja/web-app-cicd.git'
 
             }
         }
